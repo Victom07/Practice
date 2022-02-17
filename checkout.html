@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+    <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 70, 159, 1)" offset="0%"></stop><stop stop-color="rgba(255, 96, 98, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,10L40,13.3C80,17,160,23,240,21.7C320,20,400,10,480,8.3C560,7,640,13,720,20C800,27,880,33,960,36.7C1040,40,1120,40,1200,48.3C1280,57,1360,73,1440,81.7C1520,90,1600,90,1680,83.3C1760,77,1840,63,1920,50C2000,37,2080,23,2160,23.3C2240,23,2320,37,2400,48.3C2480,60,2560,70,2640,68.3C2720,67,2800,53,2880,55C2960,57,3040,73,3120,76.7C3200,80,3280,70,3360,70C3440,70,3520,80,3600,75C3680,70,3760,50,3840,50C3920,50,4000,70,4080,80C4160,90,4240,90,4320,88.3C4400,87,4480,83,4560,76.7C4640,70,4720,60,4800,61.7C4880,63,4960,77,5040,75C5120,73,5200,57,5280,41.7C5360,27,5440,13,5520,11.7C5600,10,5680,20,5720,25L5760,30L5760,100L5720,100C5680,100,5600,100,5520,100C5440,100,5360,100,5280,100C5200,100,5120,100,5040,100C4960,100,4880,100,4800,100C4720,100,4640,100,4560,100C4480,100,4400,100,4320,100C4240,100,4160,100,4080,100C4000,100,3920,100,3840,100C3760,100,3680,100,3600,100C3520,100,3440,100,3360,100C3280,100,3200,100,3120,100C3040,100,2960,100,2880,100C2800,100,2720,100,2640,100C2560,100,2480,100,2400,100C2320,100,2240,100,2160,100C2080,100,2000,100,1920,100C1840,100,1760,100,1680,100C1600,100,1520,100,1440,100C1360,100,1280,100,1200,100C1120,100,1040,100,960,100C880,100,800,100,720,100C640,100,560,100,480,100C400,100,320,100,240,100C160,100,80,100,40,100L0,100Z"></path></svg>
+    <div class="containerr">
+        <div class="navbar">
+            <img src="Img/logo.png" class="logo">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="">Game Controller</a></li>
+                    <li><a href="">Entertainment</a></li>
+                    <li><a href="">Game Media</a></li>
+                    <!-- <li><a href="">Other</a></li> -->
+                    <li><a href="login.html" class="signin">Login</a></li>
+                </ul>
+                </nav>
+            <img src="Img/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div><div class="row">
+      <div class="col-75">
+        <div class="container">
+          <form action="/action_page.php">
+          
+            <div class="row">
+              <div class="col-50">
+                <h3>Billing Address</h3>
+                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="XYZ ">
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="text" id="email" name="email" placeholder="xyz@iqra.edu.pk">
+                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                <input type="text" id="adr" name="address" placeholder="A1#132 street-6 ,Gulistan socitey">
+                <label for="city"><i class="fa fa-institution"></i> City</label>
+                <input type="text" id="city" name="city" placeholder="Karachi">
+    
+                <div class="row">
+                  <div class="col-50">
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" placeholder="PK">
+                  </div>
+                  <div class="col-50">
+                    <label for="zip">Zip</label>
+                    <input type="text" id="zip" name="zip" placeholder="00000">
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-50">
+                <h3>Payment</h3>
+                <label for="fname">Accepted Cards</label>
+                <div class="icon-container">
+                  <i class="fa fa-cc-visa" style="color:navy;"></i>
+                  <i class="fa fa-cc-amex" style="color:blue;"></i>
+                  <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                  <i class="fa fa-cc-discover" style="color:orange;"></i>
+                </div>
+                <label for="cname">Name on Card</label>
+                <input type="text" id="cname" name="cardname" placeholder="ABC">
+                <label for="ccnum">Credit card number</label>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                <label for="expmonth">Exp Month</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                <div class="row">
+                  <div class="col-50">
+                    <label for="expyear">Exp Year</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="2022">
+                  </div>
+                  <div class="col-50">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+            </label><br><br>
+            <a href="index.html" style="text-decoration: none;" ><button >Check Out</button></a>
+          </form>
+        </div>
+      </div>
+    
+    </body>
+    <script>
+        var menulist=document.getElementById("menulist")
+        menulist.style.maxHeight="0px";
+        function togglemenu(){
+
+            if(menulist.style.maxHeight=="0px"){
+                menulist.style.maxHeight="130px"
+            }else{
+                menulist.style.maxHeight="0px"
+            }
+        }
+    </script>
+</html>
